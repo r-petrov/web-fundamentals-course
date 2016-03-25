@@ -1,0 +1,106 @@
+
+/*****General styles*****/
+body {
+	font: 14px Helvetica, Arial, sans-serif;
+	color: #FFFFFF;
+}
+
+#wrapper {
+	width: 800px;
+	margin: 0 auto;
+	background-color: #3B5997;
+}
+
+fieldset {
+	float: left;
+	margin: 10px 20px;
+    padding: 5px 10px;
+    box-sizing: border-box;
+    border: 1px solid white;
+	border-radius: 5px;
+}
+
+#non-required fieldset {
+    width: 35%;
+	height: 250px;
+}
+
+#required fieldset {
+    width: 55%;
+}
+
+legend {
+	text-align: center;
+}
+
+/*****Heading styles*****/
+header {
+	margin: 5px 0;
+	text-align: center;
+	font-weight: bold;
+}
+
+.header-fakebook {
+	font-size: 6em;
+	text-align: center;
+}
+
+.r-size {
+	font-size: 1em; 
+}
+
+h4 {
+	margin: 5px 0;
+	font-size: 2em;
+}
+
+h5 {
+	font-size: 1em;
+}
+
+/*****Fields' styles*****/
+input, select, label, textarea {
+	margin: 5px 5px 5px 0;
+}
+
+label.display {
+	display: block;
+}
+
+input:not([type="reset"]):not([type="submit"]), select, textarea {
+	border-radius: 3px;
+	border: 1px inset;
+	height: 20px;
+}
+
+select:not([id="birthday"]), input:not([type="datetime"]):not([type="reset"]):not([type="submit"]):not([type="radio"]):not([id="street-number"]):not([id="floor-number"]):not([id="app-number"]) {
+	width: 120px;
+}
+
+#street-number, #floor-number, #app-number {
+	width: 60px;
+}
+
+textarea {
+	width: 90%;
+	height: 50px;
+}
+
+input[type="reset"], input[type="submit"] {
+	display: inline;
+	margin: 15px 19px;
+	border-radius: 5px;
+	border-style: none;
+	color: #3B5997;
+}
+
+input[type="reset"] {
+	width: 35%;
+	height: 40px;
+}
+
+input[type="submit"] {
+	width: 55%;
+	height: 40px;
+}
+

@@ -1,0 +1,66 @@
+body {
+  font: 12px Arial, Helvetica, sans-serif; }
+  body #wrapper {
+    width: 800px;
+    margin: 0 auto; }
+    body #wrapper header h2 {
+      width: 100%;
+      border-radius: 10px;
+      background-color: #DDDDDD;
+      height: 45px;
+      text-shadow: 1px 1px #fff;
+      font-size: 2.1em;
+      color: #AC87DD;
+      line-height: 45px;
+      text-align: center; }
+    body #wrapper main {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around; }
+      body #wrapper main section {
+        width: 180px;
+        border-radius: 10px;
+        background-color: #EEEEEE;
+        margin: 21px 0;
+        padding: 10px;
+        box-sizing: border-box; }
+        body #wrapper main section header {
+          width: 160px;
+          height: 160px;
+          border-radius: 50%;
+          background-color: #9470DC; }
+          body #wrapper main section header:hover {
+            background-color: #fff;
+            cursor: pointer; }
+          body #wrapper main section header h1 {
+            font-size: 7em;
+            color: #fff;
+            line-height: 160px;
+            text-align: center;
+            font-weight: bold; }
+            body #wrapper main section header h1:hover {
+              color: #9470DC;
+              cursor: pointer; }
+        body #wrapper main section p {
+          font-size: 1em;
+          color: #B1B0B0;
+          line-height: 100%;
+          text-align: center;
+          margin: 16px 0; }
+        body #wrapper main section button {
+          width: 160px;
+          height: 35px;
+          border-style: none;
+          border-radius: 5px;
+          background-color: #DDDDDD;
+          text-shadow: 1px 1px #fff;
+          font-size: 10px;
+          color: #817368;
+          line-height: 45px;
+          text-align: center;
+          line-height: 35px; }
+          body #wrapper main section button:hover {
+            background-color: #fff;
+            cursor: pointer; }
+
+/*# sourceMappingURL=numbers-styles.css.map */

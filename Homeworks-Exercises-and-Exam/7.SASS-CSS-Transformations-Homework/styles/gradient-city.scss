@@ -1,0 +1,247 @@
+﻿$gray-color: #808080;
+$font-bold: bold;
+$sections-margin: 20px 0;
+
+@mixin default-border-styles($color, $style) {
+    border-width: 3px;
+    border-color: $color;
+    border-style: $style;
+    padding: 5px 20px;
+}
+
+@mixin headers($size, $weight, $decoration) {
+    font-size: $size;
+    font-weight: $weight;
+    color: $gray-color;
+    text-decoration: $decoration;
+    text-align: center;
+    margin: 5px;
+}
+
+@mixin button {
+    display: block;
+    border: 3px groove #B4B4B4;
+    width: 80px;
+    height: 30px;
+    text-align: center;
+    margin: 0 30px;
+    line-height: 30px;
+    text-decoration: none;
+    color: #918DA3;
+
+    &:hover {
+        border-style: ridge;
+        background-color: #918DA3;
+        color: white;
+    }
+}
+
+@mixin flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin quarter {
+    width: 100px;
+    height: 100px;
+    margin: 15px 0;
+    border-radius: 15px;
+}
+
+@mixin vertical-gradient($color) {
+    background-image: linear-gradient($color, #FFFFFF);
+}
+
+@mixin horizontal-gradient($color) {
+    background-image: linear-gradient(to right, $color, #FFFFFF);
+}
+
+@mixin diagonal-gradient($color) {
+    background-image: linear-gradient(to bottom right, $color, #FFFFFF);
+}
+
+@mixin radial-gradient($color) {
+    background-image: radial-gradient($color, #FFFFFF);
+}
+
+body {
+    font: 14px Arial, Verdana, Tahoma, sans-serif;
+    background-color: $gray-color;
+
+    #wrapper {
+        @include default-border-styles(#C0C0C0, double);
+        margin: 0 auto;
+        width: 800px;
+        background-color: #FFFFFF;
+
+        header {
+            @include default-border-styles(#C3C3C3, groove);
+            margin: $sections-margin;
+
+            h1 {
+                @include headers(3em, bold, none);
+            }
+
+            nav {
+                ul {
+                    @include flex;
+                    margin-left: 0;
+                    padding: 0;
+
+                    li {
+                        list-style-type: none;
+
+                        a {
+                            @include button;
+                        }
+                    }
+                }
+            }
+        }
+
+        section {
+            @include default-border-styles(#C3C3C3, groove);
+            margin: $sections-margin;
+
+            header {
+                border: none;
+                @include headers(0.5em, bold, underline);
+            }
+
+
+            article {
+                @include default-border-styles(#BABABA, groove);
+                border-width: 1px;
+                margin: 15px;
+
+                #vertical {
+                    @include headers(0.6em, bold, none);
+                }
+
+                .innerContainer {
+                    @include flex;
+
+                    .purple {
+                        @include quarter;
+                        @include vertical-gradient(#340634);
+                    }
+
+                    .blue {
+                        @include quarter;
+                        @include vertical-gradient(#0303B0);
+                    }
+
+                    .green {
+                        @include quarter;
+                        @include vertical-gradient(#043304);
+                    }
+
+                    .yellow {
+                        @include quarter;
+                        @include vertical-gradient(#F5F503);
+                    }
+
+                    .orange {
+                        @include quarter;
+                        @include vertical-gradient(#EB9304);
+                    }
+
+                    .red {
+                        @include quarter;
+                        @include vertical-gradient(#CD0303);
+                    }
+                }
+            }
+
+
+			article {
+                @include default-border-styles(#BABABA, groove);
+                border-width: 1px;
+                margin: 15px;
+
+                #vertical {
+                    @include headers(0.6em, bold, none);
+                }
+
+                .innerContainer {
+                    @include flex;
+
+                    .purple {
+                        @include quarter;
+                        @include horizontal-gradient(#340634);
+                    }
+
+                    .blue {
+                        @include quarter;
+                        @include horizontal-gradient(#0303B0);
+                    }
+
+                    .green {
+                        @include quarter;
+                        @include horizontal-gradient(#043304);
+                    }
+
+                    .yellow {
+                        @include quarter;
+                        @include horizontal-gradient(#F5F503);
+                    }
+
+                    .orange {
+                        @include quarter;
+                        @include horizontal-gradient(#EB9304);
+                    }
+
+                    .red {
+                        @include quarter;
+                        @include horizontal-gradient(#CD0303);
+                    }
+                }
+            }
+
+			article {
+                @include default-border-styles(#BABABA, groove);
+                border-width: 1px;
+                margin: 15px;
+
+                #vertical {
+                    @include headers(0.6em, bold, none);
+                }
+
+                .innerContainer {
+                    @include flex;
+
+                    .purple {
+                        @include quarter;
+                        @include diagonal-gradient(#340634);
+                    }
+
+                    .blue {
+                        @include quarter;
+                        @include diagonal-gradient(#0303B0);
+                    }
+
+                    .green {
+                        @include quarter;
+                        @include diagonal-gradient(#043304);
+                    }
+
+                    .yellow {
+                        @include quarter;
+                        @include diagonal-gradient(#F5F503);
+                    }
+
+                    .orange {
+                        @include quarter;
+                        @include diagonal-gradient(#EB9304);
+                    }
+
+                    .red {
+                        @include quarter;
+                        @include diagonal-gradient(#CD0303);
+                    }
+                }
+            }
+        }
+    }
+}

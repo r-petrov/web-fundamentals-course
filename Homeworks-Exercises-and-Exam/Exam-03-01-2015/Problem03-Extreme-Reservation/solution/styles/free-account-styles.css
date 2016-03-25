@@ -1,0 +1,56 @@
+body {
+  font: 20px Arial, Helvetica, sans-serif;
+  color: #1B74AE;
+  background: url("../../Resources/Images/background.jpg") no-repeat;
+  background-size: 100%; }
+  body #wrapper {
+    width: 800px;
+    margin: 4px auto;
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 50px;
+    padding: 15px 30px; }
+    body #wrapper nav ul li {
+      display: inline-block;
+      width: 155px;
+      margin: 0 20px; }
+      body #wrapper nav ul li a {
+        text-decoration: none;
+        display: flex; }
+        body #wrapper nav ul li a img {
+          width: auto; }
+        body #wrapper nav ul li a span {
+          align-self: center;
+          font-weight: bold;
+          color: #1B74AE; }
+    body #wrapper form {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap; }
+      body #wrapper form .input, body #wrapper form legend, body #wrapper form .label {
+        display: block; }
+      body #wrapper form fieldset {
+        display: inline-block;
+        border: 2px solid #1B74AE;
+        border-radius: 15px;
+        width: 45%;
+        height: 250px;
+        margin: 0 3px; }
+        body #wrapper form fieldset legend {
+          text-align: center; }
+        body #wrapper form fieldset .personal-info {
+          width: 80%;
+          height: 40px;
+          margin: 20px auto;
+          text-align: center;
+          font-size: 22px;
+          color: #1B74AE;
+          opacity: 0.5;
+          border: 1px solid #1B74AE;
+          border-radius: 25px; }
+        body #wrapper form fieldset .flight-info {
+          text-align: center; }
+      body #wrapper form button {
+        width: 100px;
+        height: 30px; }
+
+/*# sourceMappingURL=free-account-styles.css.map */

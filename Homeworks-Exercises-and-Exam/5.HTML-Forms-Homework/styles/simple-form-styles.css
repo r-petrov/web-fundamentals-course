@@ -1,0 +1,109 @@
+
+/*****General styles*****/
+body {
+	font: 14px Tahoma, Verdana, sans-serif;
+}
+
+#wrapper {
+	width: 550px;
+	margin: 0 auto;
+	padding: 10px 15px 15px 10px;
+	background-color: #EEEEEE;
+}
+
+form {
+	margin: 0 auto;
+}
+
+#section-wrapper {
+	width: 100%;
+}
+
+.blue {
+	color: #234465;
+}
+
+.gray {
+	color: #5D5D5D;
+}
+
+.display-block {
+	display: block;
+}
+
+/*****Headers styles*****/
+h2 {
+	font: 1.5em bold;
+}
+
+p {
+	margin: 20px 0;
+	color: #959595;
+}
+
+h4 {
+	font-weight: bold;
+}
+
+span a {
+	text-decoration: none;
+}
+
+/*****Input sections styles*****/
+section {
+	width: 250px;
+	height: 220px;
+	display: inline-block;
+	padding: 10px 10px;
+}
+
+input {
+	margin: 10px 0;
+}
+
+input[type="text"], input[type="password"], input[type="email"] {
+	width: 235px;
+	height: 30px;
+	padding-left: 10px;
+}
+
+.register-button {
+	width: 125px;
+	height: 30px;
+	background-color: #EEEEEE;
+	border: 1.5px solid #234465;
+	float: right;
+	margin-top: 0;
+}
+
+section:after {
+	clear: both;
+}
+
+.login-section {
+	color: #FFFFFF;
+	background-color: #234465;
+}
+
+label {
+	font-size: 0.8em;
+	line-height: 3.5em;
+	vertical-align: top;
+	color: #FFFFFF;
+	
+}
+
+.loggin-button {
+	width: 100px;
+	height: 30px;
+	border: 1px solid #E08F0E;
+	background-color: #234465;
+	display: inline;
+	margin-left: 50px;
+}
+
+.forgot-password-link {
+	font-size: 0.8em;
+	color: #FFFFFF;
+	margin-left: 160px;
+}

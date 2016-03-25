@@ -1,0 +1,62 @@
+body, #wrapper, form, header, h1, nav, section, footer {
+  width: 100%;
+}
+
+body {
+  font: 14px Arial, Verdana, Tahoma, sans-serif;
+
+  #wrapper {
+    border: 3px solid #A7C0DE;
+
+    form {
+      nav {
+        background-color: #008000;
+        border-radius: 0;
+
+        .container-fluid {
+          margin-left: 14%;
+
+          .navbar-brand {
+            font-weight: bold;
+          }
+
+          a {
+            color: #000000;
+          }
+
+          #bs-example-navbar-collapse-1 {
+            ul {
+              .active {
+                a {
+                  background-color: #90EE90;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+
+    #header {
+      float: left;
+      width: 40%;
+      margin-left: 18%;
+    }
+
+    #header-nav {
+      float: right;
+      width: 20%;
+      margin-right: 18%;
+      ul {
+        li {
+         display: block;
+          width: 100%;
+        }
+      }
+    }
+
+    section{
+      clear: both;
+    }
+  }
+}

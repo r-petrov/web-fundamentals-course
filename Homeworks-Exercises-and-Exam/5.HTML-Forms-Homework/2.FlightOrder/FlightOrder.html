@@ -1,0 +1,102 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta charset="utf-8" />
+        <title>Flight order</title>
+        <link rel="stylesheet" type="text/css" href="../styles/reset.css" />
+        <link rel="stylesheet" type="text/css" href="../styles/flight-order-styles.css" />
+    </head>
+    <body>
+        <div id="wrapper">
+            <header>
+                <h1>
+                    Flight order
+                </h1>
+            </header>
+            <form method="GET" action="#canvas">
+                <section>
+                    <label>
+                        <span>From</span>
+                        <input list="departure-cities" name="departures" id="departures" value="enter a city"/>
+                        <datalist id="departure-cities">
+                            <option value="Sofia"></option>
+                            <option value="Moscow"></option>
+                            <option value="London"></option>
+                            <option value="Madrid"></option>
+                        </datalist>
+                    </label>
+                    <label>
+                        <span>To</span>
+                        <input list="arrival-cities" name="arrivals" id="arrivals" value="enter a city"/>
+                        <datalist id="arrival-cities">
+                            <option value="Sofia"></option>
+                            <option value="Moscow"></option>
+                            <option value="London"></option>
+                            <option value="Madrid"></option>
+                        </datalist>
+                    </label>
+                    <div class="display-block ">
+                        <input type="checkbox" name="prefer-directs" id="prefer-directs"/>
+                        <label>
+                            <span>Prefer directs</span>
+                        </label>
+                    </div>
+                </section>
+                <section>
+                    <label>
+                        <span>Departure date</span>
+                        <input type="date" name="departure-date" id="departure-date" value="2014-06-09"/>
+                    </label>
+                    <label>
+                        <span>Time interval</span>
+                        <div class="display-block">
+                            <input type="time" id="departure-start-time" name="departure-time" value="00:20"/>
+                            <input type="time" id="departure-end-time" name="departure-time" value="05:00"/>
+                        </div>
+                    </label>
+                    <label>
+                        <span>Return date</span>
+                        <input type="date" name="return-date" id="return-date" value="2014-06-13"/>
+                    </label>
+                    <label>
+                        <span>Time interval</span>
+                        <div class="display-block">
+                            <input type="time" id="return-start-time" name="return-time" value="16:00"/>
+                            <input type="time" id="return-end-time" name="return-time" value="22:00"/>
+                        </div>
+                    </label>
+                </section>
+                <section>
+                    <label>
+                        <span>12+</span>
+                        <input class="numbers" type="number" name="12+" min="0" max="12"/>
+                    </label>
+                    <label>
+                        <span>2-12</span>
+                        <input class="numbers" type="number" name="2-12" min="2" max="12"/>
+                    </label>
+                    <label>
+                        <span>0-2</span>
+                        <input class="numbers" type="number" name="0-2" min="0" max="2"/>
+                    </label>
+                    <label>
+                        <span>Choose class</span>
+                        <select class="display-block" name="class">
+                            <option value="economy">
+                                Economy
+                            </option>
+                            <option value="business">
+                                Business
+                            </option>
+                            <option value="first">
+                                First
+                            </option>
+                        </select>
+                    </label>
+                </section>
+                <input class="display-block" type="submit" name="search" value="Search"/>
+            </form>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,53 @@
+body {
+  font: 14px Tahoma, Helvetica, sans-serif; }
+  body #wrapper {
+    width: 1000px;
+    margin: 0 auto; }
+    body #wrapper nav {
+      background-color: #384452; }
+      body #wrapper nav ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: left; }
+        body #wrapper nav ul li {
+          width: 180px;
+          height: 60px;
+          padding-bottom: 25px; }
+        body #wrapper nav ul .search {
+          background-color: #3BBC96; }
+        body #wrapper nav ul a {
+          text-decoration: none;
+          color: #fff;
+          line-height: 60px;
+          text-align: center; }
+          body #wrapper nav ul a img {
+            display: inline;
+            width: 50px;
+            margin-right: -13px; }
+    body #wrapper form {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      background-color: #EEEEEE;
+      margin-top: -10px; }
+      body #wrapper form label {
+        margin: 20px 0;
+        box-sizing: border-box; }
+        body #wrapper form label p {
+          margin-bottom: 20px; }
+        body #wrapper form label input {
+          width: 220px;
+          height: 40px;
+          padding-left: 10px; }
+      body #wrapper form .submit {
+        width: 220px;
+        height: 40px;
+        margin-top: 55px;
+        background-color: #3BBC96;
+        color: #fff;
+        border-style: none; }
+        body #wrapper form .submit:hover {
+          background-color: #384452; }
+
+/*# sourceMappingURL=search-job-styles.css.map */

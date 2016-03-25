@@ -1,0 +1,30 @@
+body {
+	font: 14px, sans-serif;
+}
+
+#wrapper {
+	width: 400px;
+	margin: 0 auto;
+}
+
+label {
+	display: inline-block;
+	margin: 15px 0;
+}
+
+input[type="search"] {
+	display: inline;
+	height: 30px;
+}
+
+.wp-image {
+	vertical-align: middle;
+}
+
+.vertical-align-text {
+	vertical-align: top;
+}
+
+.div-margin {
+	margin: 10px 0;
+}

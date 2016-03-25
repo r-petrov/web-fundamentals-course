@@ -1,0 +1,150 @@
+
+/*****General styles*****/
+body {
+	font: 14px Arial, Tahoma, Verdana, sans-serif;
+	color: #FFFFFF;
+}
+
+#wrapper {
+	background-color: #234465;
+	padding: 20px;
+}
+
+a {
+	display: block;
+	padding: 0.2em 0.8em;
+	text-decoration: none;
+	background: #234465;
+	color: #FFFFFF;
+}
+
+button, a:not([id="a-beta"]) {
+	text-transform: uppercase;
+}
+
+.display-inline {
+	display: inline;
+}
+
+.float-left {
+	float: left;
+}
+
+div:after {
+	clear: both;
+}
+
+.margin-right {
+	margin-right: 10px;
+}
+
+.padding-bottom {
+	padding-bottom: 5px;
+}
+
+
+/*****Softuni logo styles*****/
+img {
+	width: 185px;
+	
+}
+
+#beta {
+	position: absolute;
+	font-size: 0.7em;
+	top: 20px;
+	left: 200px;
+}
+
+/*****User's menu styling*****/
+.align-right {
+	position: absolute;
+	top: 100%;
+	left: 100%;
+}
+
+ul.dropdown-menu li {
+	display: block;
+	
+}
+
+/*****Dropdown using the hover selector sryles*****/
+.dropdown {
+	position: relative;
+	display: inline-block;
+}
+
+.dropdown .dropdown-menu {
+	position: absolute;
+	top: 100%;
+	display: none;
+	margin: 0;
+	list-style: none;
+	width: 160%;
+	padding: 0;
+}
+
+.dropdown:hover .dropdown-menu {
+	display: block;
+}
+
+	/***Dropdown button styles***/
+.dropdown button {
+	background: #234465;
+	color: #FFFFFF;
+	border: none;
+	margin: 0;
+	padding: 0.4em 0.8em;
+	font-size: 1em;
+}
+
+	/***List item styles***/
+.dropdown a:hover {
+	background: #BBBBBB;
+	color: black;
+}
+
+/*
+.right-arrow:after {
+	content:"▼";
+	font-size: 60%;
+	line-height: 10px;
+}
+*/
+
+/*****layout styles*****/
+.first-line-parent {
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+}
+
+.second-line-parent {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+ul li {
+    margin-left: auto;
+}
+
+#search, #search-button {
+	height: 25px;
+	background-color: #FFFFFF;
+	box-sizing: border-box;
+	border: 1px inset;
+}
+
+#search {
+	border-radius: 5px 0 0 5px;
+}
+
+#search-button {
+	width: 25px;
+	border-radius: 0 5px 5px 0;
+	background-image: url("../resources/Search Filled-25.png");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 15px;
+}

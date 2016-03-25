@@ -1,0 +1,121 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta charset="utf-8" />
+        <title>Media Profile</title>
+        <link rel="stylesheet" type="text/css" href="styles/reset.css" />
+        <style>
+            #wrapper {
+                width: 1050px;
+                height: 300px;
+                margin: 10px auto;
+                background-color: lightpink;
+                padding: 20px;
+                border-radius: 30px;
+            }
+            
+             ul {
+                 list-style: none;
+             }
+
+            h1 {
+                align-content: center;
+                font: 24px bold Calibri;
+            }
+
+            .section-style {
+                margin-right: 5px;
+                float: left;
+                padding-right: 10px;
+                display: inline-block;
+            }
+
+            audio {
+                width: 300px;
+            }
+           
+            .audio-player-settings {
+                padding-top: 30px;
+                padding-bottom: 70px;
+                background-color: black;
+            }
+
+            .video-player-settings {
+                width: 420px;
+                height: 230px;
+            }
+
+            .font-settings {
+                font: 20px Calibri;
+            }
+
+            .img-size {
+                width: 250px;
+                height: 180px;
+            }
+
+            .meter-size {
+                width: 190px;
+            }
+        </style>
+    </head>
+    <body class="font-settings">
+        <div id="wrapper">
+            <header>
+                <h1 align="center">
+                    Profile
+                </h1>
+            </header>
+            <main>
+                <aside class="section-style">
+                    <figure>
+                        <figcaption>
+                            User: Kent
+                        </figcaption>
+                        <embed class="img-size" src="images/KentProfilePic.png" />
+                        <figcaption>
+                            Profile Completed 60%
+                        </figcaption>
+                        <figcaption>
+                            <meter class="meter-size" value="60" min="0" max="100"></meter>
+                        </figcaption>
+                    </figure>
+                </aside>
+                <section class="section-style">
+                    <ul>
+                        Uploaded audio files
+                        <li>
+                            <audio class="audio-player-settings" src="songs/korn-blind.mp3" type="audio/mpeg" controls autoplay>
+                                Your browser does not support the audio tag.
+                            </audio>
+                        </li>
+                        <li>
+                            <audio src="songs/korn-another_brick_in_the_wall.mp3" type="audio/mpeg" controls>
+                                Your browser does not support the audio tag.
+                            </audio>
+                        </li>
+                        <li>
+                            <audio src="songs/korn-adidas.mp3" type="audio/mpeg" controls>
+                                Your browser does not support the audio tag.
+                            </audio>
+                        </li>
+                        <li>
+                            <audio src="songs/korn-word_up_cameo_cover.mp3" type="audio/mpeg" controls>
+                                Your browser does not support the audio tag.
+                            </audio>
+                        </li>
+                    </ul>
+                </section>
+                <section class="section-style">
+                    <header>
+                        Uploaded video files
+                    </header>
+                    <video class="video-player-settings" src="http://www.w3schools.com/tags/movie.mp4" type="videos/mp4" controls>
+                        Your browser does not support the video tag.
+                    </video>
+                </section>
+            </main>
+        </div>
+    </body>
+</html>

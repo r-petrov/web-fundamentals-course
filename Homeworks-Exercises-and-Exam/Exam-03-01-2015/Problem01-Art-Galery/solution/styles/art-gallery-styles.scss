@@ -1,0 +1,67 @@
+$background-color: #D7A081;
+
+@mixin box-styles($padding-x, $padding-y, $background) {
+  box-sizing: border-box;
+  padding: $padding-x $padding-y;
+  background-color: $background;
+}
+
+body {
+  font: 22px Arial, Helvetica, sans-serif;
+  background-color: #F0E3D3;
+
+  #wrapper {
+    width: 900px;
+    height: 500px;
+    margin: 80px auto;
+    display: flex;
+    justify-content: center;
+
+    section {
+      width: 300px;
+    }
+
+    .links {
+      @include box-styles(0, 50px, $background-color);
+
+      .click {
+        width: 200px;
+        height: 100px;
+        background-color: #fff;
+        margin: 50px 0;
+        @include box-styles(25px, 25px, #fff);
+
+          button {
+            width: 150px;
+            height: 50px;
+            border-style: none;
+            border-radius: 8px;
+            background-color: $background-color;
+            color: #61371E;
+            font-size: 22px;
+
+            &:hover {
+              color: #fff;
+              box-shadow: 0 0 8px 4px #9D9690;
+            }
+          }
+      }
+    }
+
+    .picture {
+      background-color: #741819;
+
+      .img-picture {
+        width: 200px;
+        height: 400px;
+        @include box-styles(25px, 25px, #fff);
+        margin: 50px auto;
+
+        img {
+          width: 150px;
+          height: 350px;
+        }
+      }
+    }
+  }
+}

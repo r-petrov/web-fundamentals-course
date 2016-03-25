@@ -1,0 +1,115 @@
+
+/*****General styles*****/
+body {
+	font: 14px Tahoma, Verdana, sans-serif;
+	color: #2C425A;
+}
+
+#wrapper {
+	width: 800px;
+	margin: 0 auto;
+}
+
+section {
+	display: inline-block;
+	vertical-align: top;
+	
+}
+
+div {
+	margin: 5px;
+}
+
+span {
+	display: block;
+	text-align: left;
+}
+
+label {
+	display: block;
+	margin: 10px 0;
+	height: 20px;
+	text-align: center;
+	vertical-align: top;
+}
+
+/*
+input[type="range"]:before {
+    content: attr(min) " ";
+	color: #2C425A;
+	vertical-align: bottom;
+}
+
+input[type="range"]:after {
+    content: " " attr(max);
+	color: #2C425A;
+	vertical-align: bottom;
+}
+*/
+
+/*****Heading styles*****/
+header {
+	font-weight: bold;
+	font-size: 1.5em;
+}
+
+/*****Buttons' styles*****/
+button {
+	width: 160px;
+	height: 180px;
+	padding: 5px;
+	margin: 5px;
+	border: 1px solid #F3F9FD;
+	border-radius: 5px;
+	background-color: #FFFFFF;
+}
+
+/*
+button:hover {
+	border: 3px solid #EB030C;
+}
+*/
+
+.characteristics {
+	margin: auto;
+	width: 100%;
+	color: #2C425A;
+}
+
+.brand-and-model {
+	font-weight: bold;
+}
+
+.price {
+	width: 90px;
+	height: 30px;
+	line-height: 30px;
+	color: #FFFFFF;
+	background-color: #2C425A;
+	border-radius: 10px 0 0 0;
+	vertical-align: bottom;
+	float: right;
+}
+
+div {
+	clear: both;
+}
+
+img {
+	width: 120px;
+	
+}
+
+label > span {
+	display: inline;
+	vertical-align: bottom;
+	font-size: 0.8em;
+}
+
+.left {
+	float: left;
+}
+
+.right {
+	float: right;
+}

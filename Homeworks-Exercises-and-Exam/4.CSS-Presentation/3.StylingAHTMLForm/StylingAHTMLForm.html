@@ -1,0 +1,99 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <link rel="stylesheet" type="text/css " href="../styles/reset.css" />
+    <link rel="stylesheet" type="text/css " href="../styles/styling-a-html-form.css" />
+</head>
+<body>
+    <div id="wrapper">
+        <form>
+            <section>
+                <header>
+                    <h2>
+                        Step 1: Your details
+                    </h2>
+                </header>
+
+                <label for="name">
+                    <span>Name </span>
+                </label>
+                <input id="name" class="input-opacity" type="text" name="name" placeholder=" First and last name" />
+
+                <label for="email">
+                    <span>Email </span>
+                </label>
+                <input id="email" type="email" name="email" placeholder=" example@domain.com" />
+
+                <label for="phone-number">
+                    <span>Phone </span>
+                </label>
+                <input id="phone-number" type="tel" name="phone-number" placeholder=" eg. +447500000000" />
+            </section>
+            <section>
+                <header>
+                    <h2>
+                        Step 1: Delivery adress
+                    </h2>
+                </header>
+
+                <label id="for-address" for="address">
+                    <span>Address </span>
+                </label>
+                <textarea id="address" name="address"></textarea>
+
+                <label for="post-code">
+                    <span>Post code </span>
+                </label>
+                <input id="post-code" type="text" name="post-code" />
+
+                <label for="country">
+                    <span>Country </span>
+                </label>
+                <input id="country" type="text" name="country" />
+            </section>
+            <section>
+                <header>
+                    <h2>
+                        Step 1: Card details
+                    </h2>
+                </header>
+
+                <label id="for-card-type" for="visa amex mastercard">
+                    <span>Card type</span>
+                </label>
+                <div id="div-radio">
+                    <input id="visa" type="radio" name="visa" />
+                    <img src="../resources/visa.png" alt="Visa" />
+                    VISA
+                    <input id="amex" type="radio" name="amex" />
+                    <img src="../resources/amex.png" alt="AmEx" />
+                    AmEx
+                    <input id="mastercard" type="radio" name="mastercard" />
+                    <img src="../resources/mastercard.png" alt="Mastercard" />
+                    MasterCard
+                </div>
+                <label for="card-number">
+                    <span>Card number</span>
+                </label>
+                <input id="card-number" type="text" name="phone-number" />
+
+                <label for="code">
+                    <span>Security code</span>
+                </label>
+                <input id="code" type="password" name="code" />
+
+                <label for="card-name">
+                    <span>Name of card</span>
+                </label>
+                <input id="card-name" type="text" name="name-of-card" placeholder=" exact name as on the card" />
+            </section>
+            <button>
+                BUY IT!
+            </button>
+        </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,103 @@
+/*Set general styles*/
+#wrapper {
+	width: 540px;
+	padding: 15px;
+	border-top: 5px dotted yellow;
+	border-right: 10px solid green;
+	border-bottom: 8px double blue;
+	border-left: 5px dashed red;
+	box-shadow: 10px 10px 5px #737373;
+	position: static;
+	z-index: 1;
+	
+}
+
+body {
+	width: 1100px;
+	margin: 120px 350px;
+	position: static;
+	font-family: Tahoma, Verdana, sans-serif;
+}
+
+/*Set heading styles*/
+.heading-fonts {
+	text-transform: uppercase;
+	text-align: center;
+	font-size: 40px;
+	text-shadow: 5px 5px 9px #808080
+}
+
+/*Set main element styles*/
+.main-border {
+	margin: 30px 20px;
+	padding: 20px;
+	border: 2px solid red;
+	border-radius: 50px;
+	box-shadow: 
+	0 0 0 2px yellow,
+	0 0 0 4px green,
+	0 0 0 6px blue;
+}
+
+.paragraph-center {
+	margin-bottom: 25px;
+	text-align: center;
+	text-shadow: 8px 8px 8px #808080
+}
+
+/*Set section elements styles*/
+.pseudo-buttons {
+	margin: 20px 5px;
+	padding: 1px 15px;
+	display: inline;
+	background-color: #e68900;
+	border: 3px outset #e68900;
+	font-size: 14px;
+}
+
+.right-align {
+	margin-right: 20px;
+}
+
+.left-align {
+	margin-left: 50px;
+}
+
+/*Display the "cool" <div>*/
+.common-cool-element-styles {
+	border-radius: 30px;
+	border: 2px dashed white;
+	box-shadow: 0 0 0 4px gray;
+	background-color: gray;
+	opacity: 0.6;
+}
+
+.cool-fonts {
+	font-weight: bold;
+	font-size: 16px;
+	line-height: 18px;
+	color: rgba(255, 255, 255, 1);
+	text-align: center;
+}
+
+#first-cool-element-styles {
+	width: 90px;
+	height: 40px;
+	padding: 5px;
+	text-align: center;
+	z-index: 2;
+	position: relative;
+	margin: 0 50px -80px 535px;
+}
+
+#second-cool-element-styles {
+	width: 25px;
+	height: 25px;
+	margin: -25px 0px 5px 430px;
+}
+
+#third-cool-element-styles {
+	width: 15px;
+	height: 15px;
+	margin: -25px -10px 5px 390px;
+}

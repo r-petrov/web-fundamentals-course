@@ -1,0 +1,60 @@
+
+/*****General styles*****/
+body {
+	font: 12px Arial, Tahoma, Verdana, sans-serif;
+	color: #CBDBD8;
+}
+
+#wrapper {
+	background-color: #234465;
+	padding: 10px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-content: flex-start;
+}
+
+a {
+	color: #CBDBD8;
+	text-decoration: none;
+}
+
+ul li {
+	margin: 10px 0;
+}
+
+img {
+	width: 25px;
+	height: 25px;
+	margin-right: 10px;
+	border: 1px solid #788EA2;
+	background-color: #FFFFFF;
+}
+
+/*****Headers' styles*****/
+h1 {
+	margin: 10px 0 15px 0;
+	text-transform: uppercase;
+	font-weight: bold;
+	color: #FFA105;
+}
+
+/*****Sections' styles*****/
+#first a {
+	display: block;
+	margin: 10px 0;
+	width: 150px;
+	height: 30px;
+	background-color: #234465;
+	border: 2px solid #FFA105;
+	text-align: center;
+	line-height: 30px;	
+}
+
+#twitter img {
+	background-color: #234465;
+}
+
+.links {
+	margin: 20px 0;
+}

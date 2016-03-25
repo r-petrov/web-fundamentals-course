@@ -1,0 +1,54 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta charset="utf-8" />
+        <title>SimpleForm</title>
+        <link rel="stylesheet" type="text/css" href="../styles/reset.css"/>
+        <link rel="stylesheet" type="text/css" href="../styles/simple-form-styles.css"/>
+    </head>
+    <body>
+    <div id="wrapper">
+        <header>
+            <h2 class="blue">
+                Enter the system
+            </h2>
+            <p>
+                It is necessary to login in Your account in order to sign in for the course.
+            </p>
+        </header>
+        <form method="POST" action="#canvas">
+            <div id="section-wrapper">
+                <section class="register-section">
+                    <header>
+                        <h4 class="gray">
+                            Are You new?
+                            <span>
+                                    <a class="blue" href="#register">Register</a>
+                                </span>
+                        </h4>
+                    </header>
+                    <input class="display-block" type="text" name="username" id="username" placeholder="User name"/>
+                    <input class="display-block" type="email" name="email" id="email" placeholder="Email"/>
+                    <input class="display-block" type="password" name="password" id="password" placeholder="Password"/>
+                    <input class="display-block" type="password" name="confirm-password" id="confirm-password" placeholder="Confirm password"/>
+                    <input class="display-block blue register-button" type="submit" name="register" id="register" value="Register"/>
+                </section>
+                <section class="login-section">
+                    <header>
+                        <h4>
+                            Already a student? Login
+                        </h4>
+                    </header>
+                    <input class="display-block" type="text" name="user-name" id="user-name" placeholder="User name"/>
+                    <input class="display-block" type="password" name="pass-word" id="pass-word" placeholder="Password"/>
+                    <input type="checkbox" name="remember" id="remember"/>
+                    <label class="checkbox-label">Remember me?</label>
+                    <input class="loggin-button display-block" type="submit" name="login" id="login" value="Login"/>
+                    <a class="forgot-password-link display-block" href="#">Forgot password</a>
+                </section>
+            </div>
+        </form>
+    </div>
+    </body>
+</html>

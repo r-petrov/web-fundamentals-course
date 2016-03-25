@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Free Account</title>
+        <link rel="stylesheet" href="styles/reset.css"/>
+        <link rel="stylesheet" href="styles/free-account-styles.css"/>
+    </head>
+    <body>
+        <div id="wrapper">
+            <nav>
+                <ul>
+                    <li>
+                        <a href="#">
+                            <img src="../Resources/Images/paraglider-icon.png" alt="Paragliding">
+                            <span>Paragliding</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="../Resources/Images/sky-diver.png" alt="Skydiving">
+                            <span>Skydiving</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="../Resources/Images/climbing.png" alt="Climbing">
+                            <span>Climbing</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="../Resources/Images/about-us.png" alt="About Us">
+                            <span>About Us</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <form>
+                <fieldset>
+                    <legend>
+                        Personal Info
+                    </legend>
+                    <input class="input personal-info" type="text" name="full-name" placeholder="Enter your full name" />
+                    <input class="input personal-info" type="email" name="email" placeholder="Enter a valid e-mail" />
+                    <input class="input personal-info" type="tel" name="phone-number" placeholder="Enter a phone number" />
+                </fieldset>
+                <fieldset class="flight-info">
+                    <legend>
+                        Flight Info
+                    </legend>
+                    <div class="center">
+                        <p>
+                            Are flying for first time?
+                        </p>
+                        <label>
+                            Yes
+                        </label>
+                        <input class="flight-info" type="radio" name="yes">
+                        <label>
+                            No
+                        </label>
+                        <input class="flight-info" type="radio" name="no">
+                    </div>
+
+                    <div class="center">
+                        <label class="label">
+                            Choose Destination
+                        </label>
+                        <select >
+                            <optgroup class="flight-info" label="Bulgaria">
+                                <option value="dobrostan">
+                                    Dobrostan
+                                </option>
+                                <option value="sopot">
+                                    Sopot
+                                </option>
+                                <option value="sofia">
+                                    Sofia
+                                </option>
+                                <option value="sofia">
+                                    Bourgas
+                                </option>
+                            </optgroup>
+                            <optgroup class="flight-info" label="Rest of the world">
+                                <option value="nepal">
+                                    Nepal
+                                </option>
+                                <option value="turkey">
+                                    Turkey
+                                </option>
+                                <option value="france">
+                                    France
+                                </option>
+                            </optgroup>
+                        </select>
+                    </div>
+                    <div class="center">
+                        <label class="label">
+                            Choose Date
+                        </label>
+                        <input class="input flight-info" type="date" name="date" value="mm/dd/yyyy">
+                    </div>
+                </fieldset>
+                <div class="buttons">
+                    <input class="reset" type="reset" name="clear" value="Clear">
+                    <input class="submit" type="submit" name="send" value="Send">
+                </div>
+            </form>
+        </div>
+    </body>
+</html>

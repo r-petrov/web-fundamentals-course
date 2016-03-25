@@ -1,0 +1,53 @@
+@font-face {
+  font-family: Animated;
+  src: url("../resources/Animated.ttf");
+}
+
+body {
+  font-family: Animated;
+  margin: 20px 200px;
+}
+
+#wrapper {
+	width: 900px;
+	height: 500px;
+}
+
+p {
+	font-size: 40px;
+	color: #ffcc00;
+	padding: 20px 0 0 540px;
+}
+
+.gradient {
+	background: radial-gradient(at top left, white, #005ce6);
+	background-position: top left;
+}
+
+div {
+	width: 100%;
+	height: 100%;
+	background: 
+		url(../resources/VladoGHula.png),
+		url(../resources/PetiaHula.png),
+		url(../resources/TediHula.png),
+		url(../resources/NakovHula.png),
+		url(../resources/AlexHula.png),
+		url(../resources/VladoGHula.png),
+		url(../resources/HawaiiBackground.png);
+	background-position:
+	
+	50% 10%,
+	200px 150px;
+	
+	background-repeat:
+		no-repeat,
+		no-repeat,
+		no-repeat,
+		no-repeat,
+		no-repeat,
+		no-repeat,
+		no-repeat;
+	
+}
+

@@ -1,0 +1,17 @@
+#background {
+	background-color: rgb(165, 212, 231);
+}
+
+#customHr {
+	width: 95%;
+        color: black;
+        line-height: 1px;
+        margin-top: -6px;
+        margin-bottom: 10px;
+}       
+
+#my-object {
+	height: 150px;
+	width: 1500px;
+	overflow: hidden;
+}

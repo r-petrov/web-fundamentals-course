@@ -1,0 +1,91 @@
+body, #wrapper, header, h1, nav, section, aside, footer {
+  width: 100%; }
+
+body {
+  font: 12px Arial, Verdana, Tahoma, sans-serif;
+  background-color: #6698FF; }
+  @media (min-width: 781px) and (max-width: 960px) {
+    body {
+      background-color: #51476F; } }
+  body #wrapper {
+    width: 68%;
+    margin: 1% auto; }
+    body #wrapper header h1 {
+      text-align: left;
+      margin-bottom: 20px; }
+      body #wrapper header h1 a {
+        font-size: 2.3em;
+        font-weight: bold;
+        text-decoration: none;
+        margin-left: 10px; }
+        body #wrapper header h1 a img {
+          width: 200px; }
+        body #wrapper header h1 a img {
+          max-width: 100%; }
+        body #wrapper header h1 a span {
+          color: #FFFFFF; }
+    body #wrapper header nav {
+      border-top: 3px solid #3C5996;
+      margin: 1.5% 0; }
+      body #wrapper header nav ul {
+        position: relative;
+        margin: -1.4% 0.5% 0 0;
+        float: right; }
+        body #wrapper header nav ul li {
+          width: 100%;
+          display: inline;
+          border: 1px inset #375BA6;
+          margin: 0 5px;
+          padding: 10px 10px 5px 10px;
+          background-color: #FFFFFF; }
+          body #wrapper header nav ul li a {
+            text-decoration: none;
+            font-size: 1.25em; }
+    body #wrapper section {
+      width: 73%;
+      float: left; }
+      body #wrapper section article {
+        border: 1px solid #375AA2;
+        margin: 10px 0;
+        padding: 20px 10px;
+        background-color: #E0EAFE; }
+        body #wrapper section article header h1 {
+          font-size: 1.5em;
+          font-weight: bold;
+          text-decoration: none;
+          text-align: left;
+          margin-bottom: 10px; }
+        body #wrapper section article div p {
+          display: inline-block;
+          color: #51476F;
+          text-indent: 21px;
+          text-align: justify; }
+    body #wrapper aside {
+      width: 22%;
+      border: 1px solid #375AA2;
+      margin: 10px 0;
+      padding: 20px 10px;
+      background-color: #E0EAFE;
+      float: right;
+      padding: 5px 10px; }
+      body #wrapper aside div ul li {
+        margin: 10px 0; }
+        body #wrapper aside div ul li a {
+          text-decoration: none;
+          color: #51476F;
+          text-align: left; }
+    body #wrapper footer {
+      clear: both;
+      border: 1px solid #375AA2;
+      margin: 10px 0;
+      padding: 20px 10px;
+      background-color: #E0EAFE;
+      font-size: 1.4em;
+      font-weight: bold;
+      text-decoration: none;
+      padding: 16px 0 5px 0;
+      text-decoration: solid;
+      text-align: center;
+      vertical-align: bottom; }
+
+/*# sourceMappingURL=UnresponsiveHomework.css.map */

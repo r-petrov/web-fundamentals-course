@@ -1,0 +1,65 @@
+
+/*****General styles*****/
+body {
+	font: 14px Tahoma, Verdana, sans-serif;
+}
+
+#wrapper {
+	width: 400px;
+	margin: 0 auto;
+	padding: 10px 0px 10px 5px;
+	background-color: #FFC0CB;
+}
+
+section {
+	margin: 0 auto;
+	display: block;
+}
+
+input, select {
+	margin: 5px 0;
+}
+
+label {
+	display: inline-block;
+}
+
+span {
+	font-style: italic;
+	font-size:  0.8em;
+	color:  #3B2130;
+}
+
+.display-block {
+	display: block;
+}
+
+/*****Header styles*****/
+h1 {
+	font-style: italic;
+	font-weight:  bold;
+	font-size:  2.5em;
+	text-transform: uppercase;
+	text-align: center;
+}
+
+/*****Input fields styles*****/
+input[list], input[type="date"], input[type="number"] {
+	display: block;
+}
+
+input[type="checkbox"] {
+	margin-left: 200px;
+}
+
+input[list], input[type="date"], input[type="submit"], select {
+	width: 190px;
+}
+
+.numbers {
+	width: 58px;
+}
+
+input[type="submit"]{
+	margin-left: 198px;
+}

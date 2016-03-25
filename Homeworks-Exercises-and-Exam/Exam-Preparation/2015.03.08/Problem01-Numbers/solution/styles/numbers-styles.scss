@@ -1,0 +1,94 @@
+$gray-background: #DDDDDD;
+$border-radius: 10px;
+
+@mixin background($borders-radius, $background-color) {
+  border-radius: $borders-radius;
+  background-color: $background-color;
+}
+
+@mixin fonts($font-size, $color, $line-height) {
+  font-size: $font-size;
+  color: $color;
+  line-height: $line-height;
+  text-align: center;
+}
+
+@mixin shadow-fonts($font-size, $color) {
+  text-shadow: 1px 1px #fff;
+  @include fonts($font-size, $color, 45px)
+}
+
+@mixin hover($color) {
+  background-color: $color;
+  cursor: pointer;
+}
+
+body {
+  font: 12px Arial, Helvetica, sans-serif;
+
+  #wrapper {
+    width: 800px;
+    margin: 0 auto;
+
+    header {
+      h2 {
+        width: 100%;
+        @include background($border-radius, $gray-background);
+        height: 45px;
+        @include shadow-fonts(2.1em, #AC87DD);
+      }
+    }
+
+    main {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+
+      section {
+        width: 180px;
+        @include background($border-radius, #EEEEEE);
+        margin: 21px 0;
+        padding: 10px;
+        box-sizing: border-box;
+
+        header {
+          width: 160px;
+          height: 160px;
+          @include background(50%, #9470DC);
+
+          &:hover {
+            @include hover(#fff);
+          }
+
+          h1 {
+            @include fonts(7em, #fff, 160px);
+            font-weight: bold;
+
+            &:hover {
+              color: #9470DC;
+              cursor: pointer;
+            }
+          }
+        }
+
+        p {
+          @include fonts(1em, #B1B0B0, 100%);
+          margin: 16px 0;
+        }
+
+        button {
+          width: 160px;
+          height: 35px;
+          border-style: none;
+          @include background(5px, #DDDDDD);
+          @include shadow-fonts(10px, #817368);
+          line-height: 35px;
+
+          &:hover {
+            @include hover(#fff);
+          }
+        }
+      }
+    }
+  }
+}

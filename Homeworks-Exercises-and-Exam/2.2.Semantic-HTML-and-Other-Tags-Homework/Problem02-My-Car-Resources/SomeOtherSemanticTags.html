@@ -1,0 +1,95 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta charset="utf-8" />
+        <title>Ford Mustang</title>
+        <style>
+            .fontSize {
+                font-size: 14px;
+            }
+
+             .imgSize {
+                 width: 125px;
+             }
+
+             .meterSize {
+                 width: 60px;
+             }
+
+            audio {
+                width: 240px;
+            }
+            
+            .audioPlayerSettings {
+                padding-top: 30px;
+                padding-bottom: 60px;
+                background-color: black;
+            }
+
+            .videoPlayerSettings {
+                width: 255px;
+            }
+        </style>
+    </head>
+    <body id="wrapper">
+        <div id="wrapper">
+            <header>
+                <figure class="fontSize">
+                    <figcaption>
+                        <small>This is my car.</small>
+                    </figcaption>
+                    <embed class="imgSize" src="images/fordmustang.jpg" alt="Ford Mustang" />
+                    <figcaption>
+                        <small>Awesomeness completed 60%</small>
+                    </figcaption>
+                    <figcaption>
+                        <meter class="meterSize" value="80" min="0" max="100"></meter>
+                    </figcaption>
+                </figure>
+            </header>
+            <main>
+                <section>
+                    <header>
+                        <h3>
+                            Imagine 355 horses simultaneously. That's how my car sounds
+                        </h3>
+                    </header>
+                    <audio class="audioPlayerSettings" controls autoplay>
+                        <source src="http://www.w3schools.com/tags/horse.ogg" type="audio/ogg">
+                        Your browser does not support the audio element.
+                    </audio>
+                    <audio class="audioPlayerSettings" controls autoplay>
+                        <source src="http://www.w3schools.com/tags/horse.ogg" type="audio/ogg">
+                        Your browser does not support the audio element.
+                    </audio>
+                    <audio class="audioPlayerSettings" controls autoplay>
+                        <source src="http://www.w3schools.com/tags/horse.ogg" type="audio/ogg">
+                        Your browser does not support the audio element.
+                    </audio>
+                    <audio class="audioPlayerSettings" controls autoplay>
+                        <source src="http://www.w3schools.com/tags/horse.ogg" type="audio/ogg">
+                        Your browser does not support the audio element.
+                    </audio>
+                    <audio controls autoplay>
+                        <source src="http://www.w3schools.com/tags/horse.ogg" type="audio/ogg">
+                        Your browser does not support the audio element.
+                    </audio>
+                </section>
+                <section>
+                    <header>
+                        <h3>
+                            With my car I can go anywhere!
+                        </h3>
+                    </header>
+                    <video class="videoPlayerSettings" controls>
+                        <source src="http://www.w3schools.com/tags/movie.mp4" type="video/mp4">
+                        <source src="http://www.w3schools.com/tags/movie.ogg" type="video/ogg">
+                        <track src="subtitles_en.vtt" kind="subtitles" srclang="en" label="English">
+                        Your browser does not support the video tag.
+                    </video>
+                </section>
+            </main>
+        </div>
+    </body>
+</html>

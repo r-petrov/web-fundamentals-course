@@ -1,0 +1,92 @@
+@font-face {
+  font-family: RicksAmericanNF;
+  src: url("../../Resources/Fonts/RicksAmericanNF.ttf"); }
+body {
+  font: 16px Arial, Helvetica, sans-serif;
+  color: #F8B71E;
+  text-shadow: 2px 2px 0px #000;
+  background-color: #000000; }
+  body #wrapper {
+    width: 960px;
+    margin: auto; }
+    body #wrapper .header {
+      font-family: RicksAmericanNF;
+      text-transform: uppercase; }
+      body #wrapper .header h1 {
+        font-size: 60px;
+        letter-spacing: 18px;
+        text-align: center; }
+      body #wrapper .header nav {
+        margin: 14px 0; }
+        body #wrapper .header nav ul li {
+          display: inline-block;
+          width: 230px;
+          text-align: center; }
+          body #wrapper .header nav ul li:hover {
+            background-color: #F8B71E;
+            border-radius: 50px; }
+          body #wrapper .header nav ul li a {
+            text-decoration: none;
+            font-style: normal;
+            color: #F8B71E;
+            font-size: 30px; }
+    body #wrapper main {
+      background-color: #3C3C3C;
+      display: flex;
+      justify-content: space-between;
+      padding: 10px 30px; }
+      body #wrapper main section {
+        width: 59%; }
+        body #wrapper main section article {
+          margin: 0 0 30px 0;
+          clear: both; }
+          body #wrapper main section article header h6 {
+            font-weight: bold;
+            font-size: 23px;
+            text-transform: uppercase;
+            text-align: center; }
+          body #wrapper main section article img {
+            width: 275px;
+            float: left;
+            margin-right: 5px; }
+          body #wrapper main section article p {
+            text-indent: 20px;
+            text-align: justify; }
+            body #wrapper main section article p span a {
+              text-decoration: none;
+              font-style: italic;
+              color: #F8B71E;
+              font-weight: bold; }
+      body #wrapper main aside {
+        width: 35%; }
+        body #wrapper main aside div {
+          margin: 0;
+          margin: 20px 20px 0 20px; }
+          body #wrapper main aside div img {
+            width: 80%;
+            border: 2px solid #F8B71E;
+            border-radius: 8px;
+            margin: 0 35px; }
+            body #wrapper main aside div img:hover + .aside {
+              background-color: #F8B71E;
+              color: #602A00;
+              text-shadow: none; }
+          body #wrapper main aside div .aside {
+            position: relative;
+            top: -22px;
+            left: 35px;
+            font-weight: bold;
+            background-color: rgba(0, 0, 0, 0.5);
+            width: 224px;
+            text-indent: 25px;
+            border-radius: 0 0 8px 8px;
+            border-style: none; }
+            body #wrapper main aside div .aside:hover + .aside {
+              background-color: #F8B71E;
+              color: #602A00;
+              text-shadow: none; }
+    body #wrapper footer {
+      margin: 14px;
+      text-align: center; }
+
+/*# sourceMappingURL=blues-page-styles.css.map */

@@ -1,0 +1,81 @@
+@mixin input-size {
+  width: 220px;
+  height: 40px;
+}
+
+body {
+  font:  14px Tahoma, Helvetica, sans-serif;
+
+  #wrapper {
+    width: 1000px;
+    margin: 0 auto;
+
+    nav {
+      background-color: #384452;
+      ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: left;
+
+        li {
+          width: 180px;
+          height: 60px;
+          padding-bottom: 25px;
+        }
+
+        .search {
+          background-color: #3BBC96;
+        }
+
+
+        a {
+          text-decoration: none;
+          color: #fff;
+          line-height: 60px;
+          text-align: center;
+
+          img {
+            display: inline;
+            width: 50px;
+            margin-right: -13px;
+          }
+        }
+      }
+    }
+
+    form {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      background-color: #EEEEEE;
+      margin-top: -10px;
+
+      label {
+        margin: 20px 0;
+        box-sizing: border-box;
+
+        p {
+          margin-bottom: 20px;
+        }
+
+        input{
+          @include input-size;
+          padding-left: 10px;
+        }
+      }
+
+      .submit {
+        @include input-size;
+        margin-top: 55px;
+        background-color: #3BBC96;
+        color: #fff;
+        border-style: none;
+
+        &:hover {
+          background-color: #384452;
+        }
+      }
+    }
+  }
+}
